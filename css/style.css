@@ -3,35 +3,81 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* header*/
 body{
 background-color: rgb(244, 224, 224);
 }
+h2{
+    font-size: 50px;
+    font-family: 'Bevellier-Medium';
+}
 header{
     display: flex;
     justify-content: center;
-    align-content: center; 
+    align-content: center;
     width: 100%;
-        
 }
-
-
-main {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
+main{
     display: flex;
-    flex-wrap: wrap;
-    /* min-height: 100vh; */
-    gap: 1rem;
-    margin: 1rem;
-    
+    flex-direction: column;
 }
-
-
+.container-card{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 15px;   
+}
+ .container-chocotorta{
+    display: flex;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 15px;
+}
+.container-oreo{
+    display: flex;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 15px;
+}
+.c-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 100%;
+    min-height: 20rem;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.card img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    font-family: 'Bevellier-Regular';
+    font-size: 20px; 
+}
+.descripcion{
+    padding: 2rem;
+}
+.descripcion:hover{
+    background-color: rgb(244, 244, 244) ;
+}
 footer {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin: auto;
@@ -40,86 +86,78 @@ footer{
     margin: 10px;
     padding: 10px;
 }
-
-
+footer{
+    font-family: 'Bevellier-Regular';
+    font-size: 18px;
+    
+}
+i{
+    font-size: 20px;
+}
 .contacto, .ubicacion, .redes {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-p{
-    font-family: "Nanum Gothic", sans-serif;
-    font-weight: bold;    
-}
-
- a i{
+a{
     text-decoration: none;
     color: black;
 }
-
-.card{
+.info{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-}
-.card
-{
-
-width: 100%;
-
-border-radius: 6px;
-overflow: hidden;
-
-/* box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2); */
-}
-.card img{
-    width: 50%;
-    
-    margin: 5px;
-    padding: 5px;
-    
-}
-.descripcion p{
-    display: flex;
-
-}
-
-.container-card{
-    display: flex;
-    
-    background-color: rgb(229 135  103);
-    border-radius: 20px;
-}
-/* .container-chocotorta {
-    display: flex;
-    background-color: rgb(245 43 50);
-     border-radius: 50px;
-    
-} */
-
-/* .container-oreo {
-    display: flex;
-    background-color: rgb(218 90 45);
-    border-radius: 50px;
-} */
-.descripcion {
-    margin: 10px;
-    padding: 10px;
+    justify-content: end;
+    align-content: end;
 }
 
 @media (max-width: 805px) and (min-width :768px){
    main{
-    
-    display: flex    
-    
+
+    display: flex
+
    }
    .container-oreo{
     display: flex;
     flex-wrap: wrap;
     border-radius: 30px;
    }
+   .descripcion p{
+    font-size: 10px;
+   }
+}
 
+@media (max-width: 412px) and (min-width: 320px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .container-card, .container-chocotorta, .container-oreo{
+        padding: 1rem;
+        margin: 0rem;
+    }
+    
+    .c-img{
+        min-width: 50%;
+        min-height: 100%;
+        
+        
+    }
+    .descripcion{
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;  
+    }
 
+    .descripcion p{
+        font-size: 14px;
+    }
+    .card{
+       margin: 0;
+       padding: 0;
+       min-height: 100%;
+
+    }
 }
