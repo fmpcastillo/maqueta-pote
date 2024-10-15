@@ -112,6 +112,10 @@ a{
    }
 }
 @media(max-width: 768px) and (min-width: 481px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
