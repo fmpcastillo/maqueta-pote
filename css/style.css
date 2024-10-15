@@ -8,7 +8,7 @@ body{
 background-color: rgb(244, 224, 224);
 }
 h2{
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Bevellier-Medium';
 }
 header{
@@ -16,29 +16,15 @@ header{
     justify-content: center;
     align-content: center;
     width: 100%;
+    margin-bottom: -2rem;
 }
 main{
-    display: flex;
-    flex-direction: column;
+    display: flex; 
+  
 }
 .container-card{
     display: flex;
-    flex-direction: row;
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 15px;   
-}
- .container-chocotorta{
-    display: flex;
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 15px;
-}
-.container-oreo{
-    display: flex;
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 15px;
+    margin:3rem;
 }
 .c-img{
     display: flex;
@@ -50,31 +36,32 @@ main{
     min-height: 20rem;
     overflow: hidden;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    background-color: azure;
+    margin: 10px;
 }
 .card{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
 }
 .card img{
     width: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
+    /* border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;*/
+} 
 .descripcion {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: space-around;
+
     font-family: 'Bevellier-Regular';
-    font-size: 20px; 
+    font-size: 20px;
 }
 .descripcion{
-    padding: 2rem;
+    padding: 1rem;
 }
-.descripcion:hover{
-    background-color: rgb(244, 244, 244) ;
-}
+
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -89,10 +76,10 @@ footer{
 footer{
     font-family: 'Bevellier-Regular';
     font-size: 18px;
-    
+
 }
 i{
-    font-size: 20px;
+    font-size: 28px;
 }
 .contacto, .ubicacion, .redes {
     display: flex;
@@ -109,7 +96,7 @@ a{
     align-content: end;
 }
 
-@media (max-width: 805px) and (min-width :768px){
+@media (max-width: 1024px) and (min-width :769px){
    main{
 
     display: flex
@@ -124,40 +111,18 @@ a{
     font-size: 10px;
    }
 }
+@media(max-width: 768px) and (min-width: 481px){
 
-@media (max-width: 412px) and (min-width: 320px){
-    body{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+}
+
+@media (max-width: 480px) and (min-width: 320px){
+    main{
+        display: flex;
+        flex-direction: column;
     }
     h2{
         font-size: 20px;
-    }
-    .container-card, .container-chocotorta, .container-oreo{
-        padding: 1rem;
-        margin: 0rem;
-    }
-    
-    .c-img{
-        min-width: 50%;
-        min-height: 100%;
-        
-        
-    }
-    .descripcion{
-        margin: 0;
-        padding: 0;
-        padding-left: 10px;  
-    }
 
-    .descripcion p{
-        font-size: 14px;
-    }
-    .card{
-       margin: 0;
-       padding: 0;
-       min-height: 100%;
 
-    }
+}
 }
