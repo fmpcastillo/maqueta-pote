@@ -1,37 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* header*/
-body{
-background-color: rgb(244, 224, 224);
+
+body {
+    background-color: rgb(244, 224, 224);
+    width: 100%;
+    
 }
-h2{
+
+h2 {
     font-size: 40px;
     font-family: 'Bevellier-Medium';
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
     align-content: center;
     width: 100%;
     margin-bottom: -2rem;
+    height: auto;
 }
-main{
-    display: flex; 
-  
-}
-.container-card{
+
+main {
     display: flex;
-    margin:3rem;
+    width: 100%;
 }
-.c-img{
+
+.container-card {
+    display: flex;
+    margin: 3rem;
+}
+
+.c-img {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px;
 }
-.card{
+
+.card {
     width: 100%;
     min-height: 20rem;
     overflow: hidden;
@@ -39,27 +49,29 @@ main{
     background-color: azure;
     margin: 10px;
 }
-.card{
+
+.card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-radius: 10px;
 }
-.card img{
+
+.card img {
     width: 100%;
-    /* border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;*/
-} 
+}
+
 .descripcion {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+}
 
+.descripcion {
+    height: 14rem;
+    padding: 10px;
     font-family: 'Bevellier-Regular';
     font-size: 20px;
-}
-.descripcion{
-    padding: 1rem;
 }
 
 footer {
@@ -69,64 +81,57 @@ footer {
     align-items: center;
     margin: auto;
 }
-footer{
+
+footer {
     margin: 10px;
     padding: 10px;
 }
-footer{
+
+footer {
     font-family: 'Bevellier-Regular';
     font-size: 18px;
-
 }
-i{
+
+i {
     font-size: 28px;
 }
-.contacto, .ubicacion, .redes {
+
+.contacto,
+.ubicacion,
+.redes {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-.info{
+
+.info {
     display: flex;
     justify-content: end;
-    align-content: end;
 }
 
-@media (max-width: 1024px) and (min-width :769px){
-   main{
+@media (max-width: 1024px) and (min-width :769px) {
 
-    display: flex
-
-   }
-   .container-oreo{
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 30px;
-   }
-   .descripcion p{
-    font-size: 10px;
-   }
 }
-@media(max-width: 768px) and (min-width: 481px){
-    main{
+
+@media(max-width: 768px) and (min-width: 481px) {
+    main {
         display: flex;
         flex-direction: column;
     }
-
 }
 
-@media (max-width: 480px) and (min-width: 320px){
-    main{
+@media (max-width: 480px) and (min-width: 320px) {
+    main {
         display: flex;
         flex-direction: column;
     }
-    h2{
-        font-size: 20px;
+    .descripcion p{
+        font-size: 18px;
 
-
-}
+    }
 }
